@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>overscroll-behavior</title>
+  <style>
+    #content {
+      height: 400px;
+      width: 300px;
+      overflow: auto;
+      background-color: greenyellow;
+    }
+    #innerContent {
+      height: 300px;
+      width: 300px;
+      overflow: auto;
+      background-color: pink;
+      overscroll-behavior-y: contain;
+    }
+    body {
+      overscroll-behavior-y: none;
+    }
+  </style>
+</head>
+<body>
+  <p>body: overscroll-behavior-y: none;</p>
+  <div id="content">
+    <div id="innerContent"><p>overscroll-behavior-y: contain</p></div>
+  </div>
+  <script>
+    const contentDom = document.getElementById('content');
+    for (let i = 0; i < 50; i++) {
+      contentDom.innerHTML += `<p>我是填充内容${i}</p>`
+    }
+    const innerContentDom = document.getElementById('innerContent');
+    for (let i = 0; i < 20; i++) {
+      innerContentDom.innerHTML += `<p>我是填充内容${i}</p>`
+    }
+  </script>
+</body>
+</html>

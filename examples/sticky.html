@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sticky</title>
+  <link rel="stylesheet" href="./reset.css">
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    body {
+      --outer-height: 100px;
+      --inner-height: 40px;
+    }
+
+    nav {
+      height: var(--outer-height);
+      position: sticky;
+      top: calc(var(--inner-height) - var(--outer-height));
+      background-color: pink;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    nav p {
+      height: var(--inner-height);
+      position: sticky;
+      top: 0;
+      line-height: var(--inner-height);
+    }
+
+    #yellow, #green {
+      position: sticky;
+    }
+    #yellow {
+      background-color: yellow;
+      top: var(--inner-height);
+    }
+    #green {
+      background-color: green;
+      top: calc(var(--inner-height) + 30px);
+    }
+    div p {
+      line-height: 30px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <p>我是导航</p>
+  </nav>
+
+  <div>
+    <p>我是填充的内容</p>
+    <p>我是填充的内容</p>
+    <p>我是填充的内容</p>
+    <p>我是填充的内容</p>
+    <p>我是填充的内容</p>
+    <p>我是填充的内容</p>
+    <p id="yellow">我是黄色的内容</p>
+    <p>我是填充的内容</p>
+    <p>我是填充的内容</p>
+    <p>我是填充的内容</p>
+    <p>我是填充的内容</p>
+    <p>我是填充的内容</p>
+    <p>我是填充的内容</p>
+    <p>我是填充的内容</p>
+    <p id="green">我是绿色的内容</p>
+    <p>我是填充的内容</p>
+    <p>我是填充的内容</p>
+    <p>我是填充的内容</p>
+    <p>我是填充的内容</p>
+    <p>我是填充的内容</p>
+    <p>我是填充的内容</p>
+    <p>我是填充的内容</p>
+    <p>我是填充的内容</p>
+    <p>我是填充的内容</p>
+    <p>我是填充的内容</p>
+    <p>我是填充的内容</p>
+    <p>我是填充的内容</p>
+    <p>我是填充的内容</p>
+    <p>我是填充的内容</p>
+    <p>我是填充的内容</p>
+    <p>我是填充的内容</p>
+    <p>我是填充的内容</p>
+    <p>我是填充的内容</p>
+    <p>我是填充的内容</p>
+    <p>我是填充的内容</p>
+    <p>我是填充的内容</p>
+    <p>我是填充的内容</p>
+    <p>我是填充的内容</p>
+    <p>我是填充的内容</p>
+    <p>我是填充的内容</p>
+    <p>我是填充的内容</p>
+    <p>我是填充的内容</p>
+    <p>我是填充的内容</p>
+    <p>我是填充的内容</p>
+    <p>我是填充的内容</p>
+    <p>我是填充的内容</p>
+    <p>我是填充的内容</p>
+    <p>我是填充的内容</p>
+    <p>我是填充的内容</p>
+    <p>我是填充的内容</p>
+    <p>我是填充的内容</p>
+    <p>我是填充的内容</p>
+    <p>我是填充的内容</p>
+  </div>
+</body>
+</html>

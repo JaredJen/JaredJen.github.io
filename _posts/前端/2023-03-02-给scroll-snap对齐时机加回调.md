@@ -7,7 +7,7 @@ tags: [JS]
 
 `scroll-snap`在展示一些滚动元素的时候非常有用，能做出一些类似swiper轮播的效果。
 但
->详细关于`scroll-snap`的介绍点这里 👉🏻 [传送门](/posts/CSS属性学习#滑动吸附-scroll-snap)
+>详细关于`scroll-snap`的介绍点这里 👉🏻 [传送门]({%link _posts/前端/2023-03-01-CSS属性学习.md%})
 
 ## 解决方案
 
