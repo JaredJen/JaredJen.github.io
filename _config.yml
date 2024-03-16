@@ -88,8 +88,8 @@ comments:
     shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
   # utterances settings › https://utteranc.es/
   utterances:
-    repo: # <gh-username>/<repo>
-    issue_term: # < url | pathname | title | ...>
+    repo: JaredJen/JaredJen.github.io
+    issue_term: pathname
   # Giscus options › https://giscus.app
   giscus:
     repo: # <gh-username>/<repo>
@@ -143,11 +143,14 @@ collections:
     sort_by: order
 
 defaults:
+  # 自定义文件夹
   - scope:
       path: "_posts/算法/程序员面试金典(第六版)"
     values:
       categories: [算法, 程序员面试金典(第六版)]
       tags: [程序员面试金典(第六版)]
+
+  # 全局
   - scope:
       path: "" # An empty string here means all files in the project
       type: posts
