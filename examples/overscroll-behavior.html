@@ -7,27 +7,29 @@
   <title>overscroll-behavior</title>
   <style>
     #content {
-      height: 400px;
+      height: 200px;
       width: 300px;
       overflow: auto;
       background-color: greenyellow;
     }
     #innerContent {
-      height: 300px;
+      height: 100px;
       width: 300px;
       overflow: auto;
       background-color: pink;
-      overscroll-behavior-y: contain;
-    }
-    body {
-      overscroll-behavior-y: none;
+      overscroll-behavior-y: auto;
     }
   </style>
 </head>
 <body>
-  <p>body: overscroll-behavior-y: none;</p>
+  粉色区域的overscroll-behavior-y: 
+  <select name="type" id="typeSelection">
+    <option value="auto">auto</option>
+    <option value="contain">contain</option>
+    <option value="none">none</option>
+  </select>
   <div id="content">
-    <div id="innerContent"><p>overscroll-behavior-y: contain</p></div>
+    <div id="innerContent" />
   </div>
   <script>
     const contentDom = document.getElementById('content');
@@ -38,6 +40,10 @@
     for (let i = 0; i < 20; i++) {
       innerContentDom.innerHTML += `<p>我是填充内容${i}</p>`
     }
+    const select = document.getElementById('typeSelection');
+    select.onchange = (e) => {
+      innerContentDom.style.overscrollBehaviorY = e.target.value;
+    };
   </script>
 </body>
 </html>
