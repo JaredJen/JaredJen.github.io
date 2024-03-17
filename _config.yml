@@ -72,7 +72,7 @@ theme_mode: # [light | dark]
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: ../avatar.jpg
+avatar: /assets/img/avatar.jpg
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
@@ -149,6 +149,11 @@ defaults:
     values:
       categories: [算法, 程序员面试金典(第六版)]
       tags: [程序员面试金典(第六版)]
+  - scope:
+      path: "_posts/音乐/吉他谱"
+    values:
+      categories: [音乐, 吉他谱]
+      tags: [吉他谱]
 
   # 全局
   - scope:
