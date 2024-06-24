@@ -22,7 +22,8 @@ description: JaredJen Homepage Blog Website
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
-url: "https://jaredjen.github.io"
+# url: "https://jaredjen.github.io"
+url: "https://jaredjen.xyz"
 
 github:
   username: JaredJen # change to your github username
@@ -149,11 +150,20 @@ defaults:
     values:
       categories: [算法, 程序员面试金典(第六版)]
       tags: [程序员面试金典(第六版)]
+      image:
+        path: /assets/preview_image/algoriathm.webp
+
   - scope:
       path: "_posts/音乐/吉他谱"
     values:
       categories: [音乐, 吉他谱]
       tags: [吉他谱]
+  
+  - scope:
+      path: "_posts/安装配置/Jekyll"
+    values:
+      image:
+        path: /assets/preview_image/Jekyll.webp
 
   # 全局
   - scope:
