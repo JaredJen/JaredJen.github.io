@@ -22,9 +22,8 @@ description: JaredJen Homepage Blog Website
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
-# url: "https://jaredjen.github.io"
+url: "https://jaredjen.github.io"
 # url: "https://jaredjen.xyz"
-url: "https://JaredJen.github.io"
 
 github:
   username: JaredJen # change to your github username
