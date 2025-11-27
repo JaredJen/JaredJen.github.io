@@ -2,6 +2,14 @@
 layout: post
 title: Flutter实现IOS时间选择轮盘
 date: 2025-04-25 00:33 +0800
+categories:
+  - 前端
+  - Flutter
+tags:
+  - Flutter
+image:
+  path: /assets/preview_image/Flutter.webp
+  alt: Flutter
 ---
 ```dart
 import 'package:flutter/material.dart';

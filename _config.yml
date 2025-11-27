@@ -157,6 +157,11 @@ defaults:
     values:
       categories: [音乐, 吉他谱]
       tags: [吉他谱]
+  - scope:
+      path: "_posts/音乐/钢琴谱"
+    values:
+      categories: [音乐, 钢琴谱]
+      tags: [钢琴谱]
 
   - scope:
       path: "_posts/安装配置/Jekyll"
