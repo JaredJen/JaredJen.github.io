@@ -150,7 +150,13 @@ defaults:
       categories: [算法, 程序员面试金典(第六版)]
       tags: [程序员面试金典(第六版)]
       image:
-        path: /assets/preview_image/algoriathm.webp
+        path: /assets/preview_image/Algoriathm.jpg
+
+  - scope:
+      path: "_posts/前端/Flutter"
+    values:
+      image:
+        path: /assets/preview_image/Flutter.jpg
 
   - scope:
       path: "_posts/音乐/吉他谱"
@@ -167,7 +173,22 @@ defaults:
       path: "_posts/安装配置/Jekyll"
     values:
       image:
-        path: /assets/preview_image/Jekyll.webp
+        path: /assets/preview_image/Jekyll.jpg
+
+  - scope:
+      path: "_posts/Python"
+    values:
+      tags: [Python]
+      image:
+        path: /assets/preview_image/Python.jpg
+
+
+  - scope:
+      path: "_posts/Python/网络爬虫"
+    values:
+      tags: "网络爬虫"
+      image:
+        path: /assets/preview_image/WebCrawer.jpg
 
   # 全局
   - scope:

@@ -7,9 +7,6 @@ categories:
   - Flutter
 tags:
   - Flutter
-image:
-  path: /assets/preview_image/Flutter.webp
-  alt: Flutter
 ---
 ```dart
 import 'package:flutter/material.dart';

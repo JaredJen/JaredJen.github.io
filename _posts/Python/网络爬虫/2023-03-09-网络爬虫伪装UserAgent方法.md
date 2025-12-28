@@ -1,6 +1,6 @@
 ---
 categories: [Python, 网络爬虫]
-tags: [网络爬虫]
+tags: [Python, 网络爬虫]
 ---
 
 | 系统      | 浏览器     | User-Agent字符串                                                                                                                                     |
