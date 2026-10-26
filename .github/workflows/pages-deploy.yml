@@ -61,6 +61,20 @@ jobs:
         with:
           path: "_site${{ steps.pages.outputs.base_path }}"
 
+      - name: Deploy to VPS (jaredjen.xyz)
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+          SSH_KNOWN_HOSTS: ${{ secrets.SSH_KNOWN_HOSTS }}
+        run: |
+          mkdir -p ~/.ssh && chmod 700 ~/.ssh
+          printf '%s\n' "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
+          chmod 600 ~/.ssh/known_hosts
+          eval "$(ssh-agent -s)"
+          printf '%s\n' "$SSH_PRIVATE_KEY" | ssh-add -
+          rsync -az --delete --chmod=Du=rwx,Dgo=rx,Fu=rw,Fgo=r \
+            "_site${{ steps.pages.outputs.base_path }}/" "deploy@${SSH_HOST}:/"
+
   deploy:
     environment:
       name: github-pages
